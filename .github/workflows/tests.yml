@@ -1,0 +1,14 @@
+name: Tests Demo
+
+on:
+  pull_request:
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do codigo
+        uses: actions/checkout@v4
+
+      - name: Simular execucao de testes
+        run: echo "Rodando testes"
